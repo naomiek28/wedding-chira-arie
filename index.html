@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f0e8">
+  <title>חתונת אריה לייב ושירה</title>
+  <meta name="description" content="חתונת אריה לייב ושירה — 15 בנובמבר 2026">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body class="is-loading">
+  <div class="page-loader" id="pageLoader" role="status" aria-label="טעינת ההזמנה">
+    <div class="loader-content">
+      <div class="loader-logo-shell">
+        <img class="loader-logo loader-logo-base" src="images/logo.png" alt="">
+        <div class="loader-logo-fill"><img class="loader-logo" src="images/logo.png" alt="אריה לייב ושירה"></div>
+      </div>
+      <div class="countdown loader-countdown" data-countdown>
+        <div><span data-days>00</span><small data-i18n="days">ימים</small></div>
+        <div><span data-hours>00</span><small data-i18n="hours">שעות</small></div>
+        <div><span data-minutes>00</span><small data-i18n="minutes">דקות</small></div>
+        <div><span data-seconds>00</span><small data-i18n="seconds">שניות</small></div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="weddingMusic" src="audio/musique.mp3" preload="auto"></audio>
+  <button class="music-toggle" id="musicToggle" type="button" aria-label="הפעלת מוזיקה">♪</button>
+
+  <section class="opening" id="opening">
+    <div class="opening-content">
+      <h1 class="opening-hebrew">
+        <span class="opening-title-names">
+          <span class="opening-name">אריה</span>
+          <span class="opening-amp" aria-label="et">
+            <img src="images/ampersand-mask.png" alt="&amp;">
+          </span>
+          <span class="opening-name">שירה</span>
+        </span>
+      </h1>
+      <button class="envelope-button" id="openEnvelope" type="button" aria-label="פתיחת ההזמנה">
+        <img src="images/enveloppe.png" alt="מעטפת ההזמנה" class="envelope-img">
+      </button>
+      <p class="open-instruction">לחצו על המעטפה לפתיחת ההזמנה</p>
+    </div>
+  </section>
+
+  <main class="invitation" id="invitation" hidden>
+    <div class="language-switch" role="group" aria-label="בחירת שפה">
+      <button type="button" class="lang-button active" data-lang="he">עברית</button>
+      <span>•</span>
+      <button type="button" class="lang-button" data-lang="fr">Français</button>
+    </div>
+
+    <section class="invitation-page first-page">
+      <div class="arch-card">
+        <svg class="pasuk-arch luxury-reveal" viewBox="0 0 340 82" role="img" aria-label="הודו לה׳ כי טוב כי לעולם חסדו">
+          <path id="pasukCurve" d="M 45 72 A 125 70 0 0 1 295 72"></path>
+          <text direction="rtl">
+            <textPath href="#pasukCurve" startOffset="50%" text-anchor="middle">הודו לה׳ כי טוב כי לעולם חסדו</textPath>
+          </text>
+        </svg>
+        <div class="tiny-separator"></div>
+
+        <div class="families luxury-reveal" dir="rtl">
+          <div>
+            <p>מזל בן חמו</p>
+            <p>משה וסימון בן עמרם</p>
+            <p>יוסף ורובי בן חמו</p>
+          </div>
+          <div>
+            <p>אברהם ז״ל ואסתר פייט</p>
+            <p>משה ז״ל ופריידא יענטא גוטנשטיין</p>
+            <p>יוסף אליעזר וסילווי פייט</p>
+          </div>
+        </div>
+
+        <p class="invite-text luxury-reveal" data-i18n="invite">מתוך הודיה לה׳ ובשמחה גדולה אנו מתכבדים להזמינכם לשמחת נישואי ילדינו ונכדינו</p>
+        <div class="names-block luxury-reveal luxury-reveal-names">
+          <h2 class="couple-script couple-script-he" dir="rtl">
+            <span class="bilingual-name">
+              <span class="name-hebrew">שירה</span>
+              <small class="name-latin-under">Chira</small>
+            </span>
+            <span class="amp">&amp;</span>
+            <span class="bilingual-name">
+              <span class="name-hebrew">אריה לייב</span>
+              <small class="name-latin-under">Arié Leib</small>
+            </span>
+          </h2>
+          <h2 class="couple-script couple-script-fr" dir="ltr">
+            <span>Chira</span><span class="amp">&amp;</span><span>Arié Leib</span>
+          </h2>
+        </div>
+        <p class="presence luxury-reveal reveal-date" data-i18n="presence">ונשמח לראותכם עמנו ביום</p>
+        <p class="date-line luxury-reveal reveal-date" data-i18n="date">יום ראשון, ה׳ בכסלו תשפ״ז</p>
+        <p class="hebrew-date luxury-reveal reveal-date" data-i18n="civilDate">15 בנובמבר 2026</p>
+        <p class="time-line luxury-reveal reveal-time" data-i18n="reception">קבלת פנים בשעה 18:00</p>
+        <p class="time-line luxury-reveal reveal-time" data-i18n="houppa">חופה בשעה 19:00</p>
+        <p class="venue luxury-reveal reveal-venue" data-i18n="venueName">הרמוזו</p>
+        <p class="city luxury-reveal reveal-venue" data-i18n="city">מודיעין, ישראל</p>
+
+        <div class="countdown luxury-reveal reveal-countdown" data-countdown>
+          <div><span data-days>00</span><small data-i18n="days">ימים</small></div>
+          <div><span data-hours>00</span><small data-i18n="hours">שעות</small></div>
+          <div><span data-minutes>00</span><small data-i18n="minutes">דקות</small></div>
+          <div><span data-seconds>00</span><small data-i18n="seconds">שניות</small></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="logo-separator reveal-on-scroll"><img src="images/logo.png" alt="אריה לייב ושירה"></div>
+
+    <section class="info-section reveal-on-scroll">
+      <div class="layered-card"><div class="inner-panel">
+        <p class="card-eyebrow" data-i18n="venueLabel">מקום האירוע</p>
+        <h2 class="section-title" data-i18n="venueName">הרמוזו</h2>
+        <p class="normal-text" data-i18n="city">מודיעין, ישראל</p>
+        <div class="button-row">
+          <a class="luxury-button primary" href="https://waze.com/ul?q=%D7%94%D7%A8%D7%9E%D7%95%D7%96%D7%95%20%D7%9E%D7%95%D7%93%D7%99%D7%A2%D7%99%D7%9F" target="_blank" rel="noopener" data-i18n="waze">פתיחה ב-Waze</a>
+          <a class="luxury-button secondary" id="calendarLink" target="_blank" rel="noopener" data-i18n="calendar">הוספה ליומן Google</a>
+        </div>
+      </div></div>
+    </section>
+
+    <div class="logo-separator reveal-on-scroll"><img src="images/logo.png" alt="אריה לייב ושירה"></div>
+
+    <section class="info-section reveal-on-scroll">
+      <div class="layered-card"><div class="inner-panel">
+        <p class="card-eyebrow" data-i18n="replyLabel">אישור הגעה</p>
+        <h2 class="section-title">RSVP</h2>
+        <p class="normal-text" data-i18n="replyText">נשמח לקבל את אישור הגעתכם.</p>
+        <form class="rsvp-form" id="rsvpForm">
+          <select id="guestSide" required aria-label="צד המזמין">
+            <option value="" selected disabled data-i18n="sidePlaceholder">הוזמנתם מצד:</option>
+            <option value="chira" data-i18n="sideChira">שירה</option>
+            <option value="arie-leib" data-i18n="sideArie">אריה לייב</option>
+          </select>
+          <input id="guestName" type="text" placeholder="שם מלא" data-i18n-placeholder="name" autocomplete="name" required>
+          <div class="attendance-choice">
+            <label><input type="radio" name="attendance" value="yes" checked><span data-i18n="yes">כן, נגיע בשמחה</span></label>
+            <label><input type="radio" name="attendance" value="no"><span data-i18n="no">לצערנו לא נוכל להגיע</span></label>
+          </div>
+          <select id="guestCount" aria-label="מספר אורחים"></select>
+          <textarea id="guestMessage" placeholder="ברכה לזוג" data-i18n-placeholder="message"></textarea>
+          <button class="luxury-button primary full" type="submit" data-i18n="send">שליחה</button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+      </div></div>
+    </section>
+
+    <section class="closing-section">
+      <div class="closing-arch" dir="rtl">
+        <div class="closing-verse luxury-reveal">
+          <p class="closing-verse-main">עוד ישמע בערי יהודה ובחוצות ירושלים</p>
+          <p class="closing-verse-sub">קול ששון וקול שמחה קול חתן וקול כלה</p>
+        </div>
+        <img class="closing-rings luxury-reveal" src="images/bague.png" alt="שתי טבעות נישואין מזהב">
+      </div>
+    </section>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
