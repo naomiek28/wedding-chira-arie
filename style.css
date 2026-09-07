@@ -477,7 +477,7 @@ body.lang-fr .invite-text {
 }
 body.lang-fr .families {
   position: relative;
-  left: 14px;
+  left: 16px;
   width: calc(100% + 34px);
   margin-inline: -17px;
   padding-inline: 0;
