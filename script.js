@@ -11,7 +11,7 @@ const translations = {
     city: "מודיעין, ישראל", venueLabel: "מקום האירוע", venueName: "הרמוזו גן אירועים", waze: "פתיחה ב-Waze", calendar: "הוספה ליומן Google",
     replyLabel: "אישור הגעה", replyText: "נשמח לקבל את אישור הגעתכם.", sidePlaceholder: "הוזמנתם מצד:",
     sideChira: "שירה", sideArie: "אריה לייב", name: "שם מלא", yes: "כן, נגיע בשמחה", no: "לצערנו לא נוכל להגיע",
-    message: "ברכה לזוג", send: "שליחה", guestCountPlaceholder: "כמה אנשים יהיו נוכחים?", peopleOne: "אורח אחד", peopleMany: "אורחים", sending: "שולח...",
+    message: "ברכה לזוג", send: "שליחה", guestCountPlaceholder: "כמה אנשים יהיו?", peopleOne: "אורח אחד", peopleMany: "אורחים", sending: "שולח...",
     sent: "תודה, תשובתכם התקבלה.", error: "אירעה שגיאה. אנא נסו שוב.", credit: "הזמנה דיגיטלית בעיצוב נעמי קרסנטי"
   },
   fr: {
