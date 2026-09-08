@@ -177,11 +177,13 @@ body.loader-finished .page-loader { opacity: 0; visibility: hidden; pointer-even
 }
 .invitation.is-visible { opacity: 1; }
 .language-switch {
-  position: sticky;
-  top: 14px;
+  position: fixed;
+  top: max(14px, env(safe-area-inset-top));
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1000;
   width: max-content;
-  margin: 14px auto -58px;
+  margin: 0;
   padding: 8px 14px;
   display: flex;
   align-items: center;
@@ -269,11 +271,11 @@ html[dir="rtl"] .families {
 }
 html[dir="rtl"] .families > div:first-child {
   text-align: right;
-  transform: translateX(-21px);
+  transform: translateX(-23px);
 }
 html[dir="rtl"] .families > div:nth-child(2) {
   text-align: right;
-  transform: translateX(-14px);
+  transform: translateX(-16px);
 }
 html[dir="rtl"] .families p {
   width: 100%;
@@ -498,7 +500,7 @@ body.lang-fr .venue,
 body.lang-fr .city,
 body.lang-fr .normal-text {
   font-family: "Cormorant Garamond", serif;
-  font-style: normal;
+  font-style: italic;
 }
 
 body.lang-fr .families,
@@ -535,10 +537,10 @@ body.lang-fr .families p {
 body.lang-fr .families p::after {
   display: block;
   width: max-content;
-  color: var(--brown);
+  color: #5d4432;
   font-family: "Cormorant Garamond", serif;
-  font-size: clamp(11.5px, 2.9vw, 13px) !important;
-  font-style: normal;
+  font-size: clamp(12.5px, 3.05vw, 13.5px) !important;
+  font-style: italic;
   font-weight: 500;
   line-height: 1.4;
   letter-spacing: -.025em;
