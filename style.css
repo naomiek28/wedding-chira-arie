@@ -271,11 +271,11 @@ html[dir="rtl"] .families {
 }
 html[dir="rtl"] .families > div:first-child {
   text-align: right;
-  transform: translateX(-23px);
+  transform: translateX(-25px);
 }
 html[dir="rtl"] .families > div:nth-child(2) {
   text-align: right;
-  transform: translateX(-16px);
+  transform: translateX(-18px);
 }
 html[dir="rtl"] .families p {
   width: 100%;
@@ -761,5 +761,5 @@ body.lang-fr .city {
 
 /* Agrandir les noms des familles */
 body.lang-fr .families p::after {
-  font-size: clamp(14px, 3.4vw, 15px) !important;
+  font-size: clamp(14px, 3.4vw, 15.8px) !important;
 }
