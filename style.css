@@ -269,11 +269,11 @@ html[dir="rtl"] .families {
 }
 html[dir="rtl"] .families > div:first-child {
   text-align: right;
-  transform: translateX(-15px);
+  transform: translateX(-21px);
 }
 html[dir="rtl"] .families > div:nth-child(2) {
   text-align: right;
-  transform: translateX(-10px);
+  transform: translateX(-14px);
 }
 html[dir="rtl"] .families p {
   width: 100%;
