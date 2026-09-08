@@ -731,3 +731,35 @@ body.reveal-ready .reveal-countdown.is-visible > div:nth-child(4) { transition-d
     transition: none !important;
   }
 }
+
+/* Agrandir les textes français */
+body.lang-fr .invite-text {
+  font-size: 20px;
+}
+
+body.lang-fr .presence,
+body.lang-fr .time-line,
+body.lang-fr .normal-text {
+  font-size: 19px;
+}
+
+body.lang-fr .date-line {
+  font-size: 23px;
+}
+
+body.lang-fr .hebrew-date {
+  font-size: 20px;
+}
+
+body.lang-fr .venue {
+  font-size: 23px;
+}
+
+body.lang-fr .city {
+  font-size: 17px;
+}
+
+/* Agrandir les noms des familles */
+body.lang-fr .families p::after {
+  font-size: clamp(14px, 3.4vw, 15px) !important;
+}
