@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#f6f0e8">
   <title>חתונת אריה לייב ושירה</title>
   <meta name="description" content="חתונת אריה לייב ושירה — 15 בנובמבר 2026">
+  <link rel="preload" as="image" href="images/background.jpeg">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="images/logo.png">
 </head>
@@ -17,10 +18,10 @@
         <div class="loader-logo-fill"><img class="loader-logo" src="images/logo.png" alt="אריה לייב ושירה"></div>
       </div>
       <div class="countdown loader-countdown" data-countdown>
-        <div><span data-days>00</span><small data-i18n="days">ימים</small></div>
-        <div><span data-hours>00</span><small data-i18n="hours">שעות</small></div>
-        <div><span data-minutes>00</span><small data-i18n="minutes">דקות</small></div>
-        <div><span data-seconds>00</span><small data-i18n="seconds">שניות</small></div>
+        <div><span data-days>00</span><small>DAYS</small></div>
+        <div><span data-hours>00</span><small>HOURS</small></div>
+        <div><span data-minutes>00</span><small>MINUTES</small></div>
+        <div><span data-seconds>00</span><small>SECONDS</small></div>
       </div>
     </div>
   </div>
@@ -55,10 +56,13 @@
 
     <section class="invitation-page first-page">
       <div class="arch-card">
-        <svg class="pasuk-arch luxury-reveal" viewBox="0 0 340 82" role="img" aria-label="ודסח םלועל יכ בוט יכ ׳הל ודוה">
+        <svg class="pasuk-arch luxury-reveal" viewBox="0 0 340 82" role="img" aria-label="הודו לה׳ כי טוב כי לעולם חסדו">
           <path id="pasukCurve" d="M 45 72 A 125 70 0 0 1 295 72"></path>
-          <text direction="rtl">
+          <text class="pasuk-text-default" direction="rtl">
             <textPath href="#pasukCurve" startOffset="50%" text-anchor="middle">הודו לה׳ כי טוב כי לעולם חסדו</textPath>
+          </text>
+          <text class="pasuk-text-mobile" direction="ltr" unicode-bidi="bidi-override">
+            <textPath href="#pasukCurve" startOffset="50%" text-anchor="middle">ודסח םלועל יכ בוט יכ ׳הל ודוה</textPath>
           </text>
         </svg>
         <div class="tiny-separator"></div>
@@ -70,8 +74,8 @@
             <p>יוסף ורובי בן חמו</p>
           </div>
           <div>
-            <p>אברהם ז״ל ואסתר פייט</p>
-            <p>משה ז״ל ופריידא יענטא גוטנשטיין</p>
+            <p>אסתר פייט</p>
+            <p>פריידא יענטא גוטנשטיין</p>
             <p>יוסף אליעזר וסילווי פייט</p>
           </div>
         </div>
@@ -90,7 +94,15 @@
             </span>
           </h2>
           <h2 class="couple-script couple-script-fr" dir="ltr">
-            <span>Chira</span><span class="amp">&amp;</span><span>Arié Leib</span>
+            <span class="fr-bilingual-name">
+              <span class="name-french-script">Chira</span>
+              <small class="name-hebrew-under" dir="rtl">שירה</small>
+            </span>
+            <span class="amp">&amp;</span>
+            <span class="fr-bilingual-name">
+              <span class="name-french-script">Arié Leib</span>
+              <small class="name-hebrew-under" dir="rtl">אריה לייב</small>
+            </span>
           </h2>
         </div>
         <p class="presence luxury-reveal reveal-date" data-i18n="presence">ונשמח לראותכם עמנו ביום</p>
