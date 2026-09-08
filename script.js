@@ -11,7 +11,7 @@ const translations = {
     city: "מודיעין, ישראל", venueLabel: "מקום האירוע", venueName: "הרמוזו גן אירועים", waze: "פתיחה ב-Waze", calendar: "הוספה ליומן Google",
     replyLabel: "אישור הגעה", replyText: "נשמח לקבל את אישור הגעתכם.", sidePlaceholder: "הוזמנתם מצד:",
     sideChira: "שירה", sideArie: "אריה לייב", name: "שם מלא", yes: "כן, נגיע בשמחה", no: "לצערנו לא נוכל להגיע",
-    message: "ברכה לזוג", send: "שליחה", guestCountPlaceholder: "כמה אנשים יהיו?", peopleOne: "אורח אחד", peopleMany: "אורחים", sending: "שולח...",
+    message: "ברכה לזוג", send: "שליחה", guestCountPlaceholder: "כמה אנשים יהיו נוכחים?", peopleOne: "אורח אחד", peopleMany: "אורחים", sending: "שולח...",
     sent: "תודה, תשובתכם התקבלה.", error: "אירעה שגיאה. אנא נסו שוב.", credit: "הזמנה דיגיטלית בעיצוב נעמי קרסנטי"
   },
   fr: {
@@ -94,6 +94,22 @@ document.querySelectorAll(".lang-button").forEach(button => {
   button.addEventListener("click", () => setLanguage(button.dataset.lang));
 });
 
+document.body.classList.add("reveal-ready");
+const revealTargets = Array.from(document.querySelectorAll(".reveal-on-scroll, .luxury-reveal"));
+const firstPageRevealTargets = revealTargets.filter(element => element.closest(".first-page"));
+
+firstPageRevealTargets.forEach((element, index) => {
+  element.style.setProperty("--reveal-delay", `${240 + index * 105}ms`);
+});
+
+revealTargets
+  .filter(element => !element.closest(".first-page"))
+  .forEach(element => element.classList.add("is-visible"));
+
+function revealFirstPage() {
+  firstPageRevealTargets.forEach(element => element.classList.add("is-visible"));
+}
+
 document.getElementById("openEnvelope").addEventListener("click", async () => {
   const opening = document.getElementById("opening");
   const invitation = document.getElementById("invitation");
@@ -102,12 +118,13 @@ document.getElementById("openEnvelope").addEventListener("click", async () => {
     requestAnimationFrame(() => {
       invitation.classList.add("is-visible");
       opening.classList.add("is-closing");
+      revealFirstPage();
     });
   });
   setTimeout(() => {
     opening.hidden = true;
     window.scrollTo({top: 0, behavior: "auto"});
-  }, 950);
+  }, 1300);
   try { await music.play(); } catch (_) {}
 });
 
@@ -116,26 +133,6 @@ document.getElementById("musicToggle").addEventListener("click", async event => 
   else music.pause();
   event.currentTarget.classList.toggle("is-playing", !music.paused);
 });
-
-document.body.classList.add("reveal-ready");
-const revealTargets = document.querySelectorAll(".reveal-on-scroll, .luxury-reveal");
-
-if ("IntersectionObserver" in window) {
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add("is-visible");
-      observer.unobserve(entry.target);
-    });
-  }, {
-    threshold: 0.14,
-    rootMargin: "0px 0px -7% 0px"
-  });
-
-  revealTargets.forEach(element => observer.observe(element));
-} else {
-  revealTargets.forEach(element => element.classList.add("is-visible"));
-}
 
 document.getElementById("rsvpForm").addEventListener("submit", async event => {
   event.preventDefault();
