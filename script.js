@@ -1,4 +1,4 @@
-const googleScriptUrl = "https://script.google.com/macros/s/AKfycbxylv2YUyPssrzcc2WemS0XBZmtP3du4qBtdVrAQEsfMiL6b8NMiiKK2JP81KxG7jxeoQ/exec";
+const googleScriptUrl = "https://script.google.com/macros/s/AKfycbwZr99NLvYVPrFfQkNpI42D_KmocwOwrJUl__TkqI6noNyocVp7AAfdi2xjS50fAlhYGg/exec";
 const weddingDate = new Date("2026-11-15T18:00:00+02:00");
 
 const translations = {
@@ -9,6 +9,7 @@ const translations = {
     presence: "ונשמח לראותכם עמנו ביום", date: "יום ראשון, ה׳ בכסלו תשפ״ז",
     civilDate: "15 בנובמבר 2026", reception: "קבלת פנים בשעה 18:00", houppa: "חופה בשעה 19:00",
     city: "מודיעין, ישראל", venueLabel: "מקום האירוע", venueName: "הרמוזו גן אירועים", waze: "פתיחה ב-Waze", calendar: "הוספה ליומן Google",
+    tributeTitle: "נזכור באהבה את סבינו היקרים שאינם איתנו ביום שמחתנו", tributeMoche: "פפי משה בן חמו ז״ל", tributeMaurice: "פפי מוריס גוטנשטיין ז״ל", tributeAdi: "פפי אדי פייט ז״ל",
     replyLabel: "אישור הגעה", replyText: "נשמח לקבל את אישור הגעתכם.", sidePlaceholder: "הוזמנתם מצד:",
     sideChira: "שירה", sideArie: "אריה לייב", name: "שם מלא", yes: "כן, נגיע בשמחה", no: "לצערנו לא נוכל להגיע",
     message: "ברכה לזוג", send: "שליחה", guestCountPlaceholder: "כמה אנשים יהיו?", peopleOne: "אורח אחד", peopleMany: "אורחים", sending: "שולח...",
@@ -20,6 +21,7 @@ const translations = {
     invite: "C’est avec une immense reconnaissance envers Hachem que nous avons la joie de vous faire part du mariage de nos enfants et petits-enfants",
     presence: "Et serions honorés de votre présence le", date: "15 novembre 2026", civilDate: "5 Kislev 5787",
     reception: "Kabalat Panim à 18h00", houppa: "Houppa à 19h00", city: "Modi’in, Israël", venueLabel: "Lieu de réception", venueName: "Hermozo",
+    tributeTitle: "Une pensée pour nos chers grands-pères absents en ce jour", tributeMoche: "Papi Moché Benhamou z״l", tributeMaurice: "Papi Maurice Gutenstenne z״l", tributeAdi: "Papi Adi Feit z״l",
     waze: "Ouvrir Waze", calendar: "Ajouter à Google Calendar", replyLabel: "Réponse souhaitée", replyText: "Merci de nous confirmer votre présence.",
     sidePlaceholder: "Vous êtes invité(e) par :", sideChira: "Chira", sideArie: "Arié Leib", name: "Nom complet",
     yes: "Oui, je viens", no: "Non, je ne pourrai pas venir", message: "Un mot pour les mariés", send: "Envoyer",
@@ -165,13 +167,12 @@ document.getElementById("rsvpForm").addEventListener("submit", async event => {
   }
 });
 
-window.addEventListener("load", () => {
-  setupCalendar();
-  setLanguage("he");
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
-  setTimeout(() => {
-    document.body.classList.remove("is-loading");
-    document.body.classList.add("loader-finished");
-  }, 1800);
-});
+setupCalendar();
+setLanguage("he");
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+setTimeout(() => {
+  document.body.classList.remove("is-loading");
+  document.body.classList.add("loader-finished");
+}, 1800);
