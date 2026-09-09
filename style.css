@@ -271,11 +271,11 @@ html[dir="rtl"] .families {
 }
 html[dir="rtl"] .families > div:first-child {
   text-align: right;
-  transform: translateX(-31px);
+  transform: translateX(-19px);
 }
 html[dir="rtl"] .families > div:nth-child(2) {
   text-align: right;
-  transform: translateX(-36px);
+  transform: translateX(7px);
 }
 html[dir="rtl"] .families p {
   width: 100%;
@@ -493,6 +493,16 @@ body.lang-fr .grandfathers-tribute {
 }
 body.lang-fr .tribute-title { font-size: 13px; }
 body.lang-fr .tribute-side { font-size: 12.5px; }
+body.lang-fr .tribute-arie {
+  grid-column: 2;
+  grid-row: 1;
+  text-align: right;
+}
+body.lang-fr .tribute-chira {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: left;
+}
 
 /* CARTES */
 .logo-separator { min-height: 28svh; display: grid; place-items: center; }
