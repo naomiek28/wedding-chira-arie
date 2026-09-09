@@ -271,11 +271,11 @@ html[dir="rtl"] .families {
 }
 html[dir="rtl"] .families > div:first-child {
   text-align: right;
-  transform: translateX(-37px);
+  transform: translateX(-31px);
 }
 html[dir="rtl"] .families > div:nth-child(2) {
   text-align: right;
-  transform: translateX(-30px);
+  transform: translateX(-36px);
 }
 html[dir="rtl"] .families p {
   width: 100%;
@@ -455,6 +455,44 @@ html[dir="ltr"] .couple-script-fr { display: flex !important; }
   line-height: 1;
   letter-spacing: .04em;
 }
+
+/* SOUVENIR DES GRANDS-PÈRES */
+.grandfathers-tribute {
+  width: min(100%, 330px);
+  margin: 28px auto 0;
+  padding-top: 18px;
+  border-top: 1px solid rgba(178, 143, 84, .34);
+  color: #5d4432;
+  font-style: italic;
+}
+.tribute-title {
+  max-width: 295px;
+  margin: 0 auto;
+  font-size: 12.5px;
+  font-weight: 400;
+  line-height: 1.45;
+  text-align: center;
+}
+.tribute-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 18px;
+  margin-top: 14px;
+  direction: ltr;
+}
+.tribute-side {
+  font-size: 12px;
+  line-height: 1.45;
+}
+.tribute-side p { margin: 0 0 4px; }
+.tribute-arie { text-align: left; }
+.tribute-chira { text-align: right; }
+body.lang-fr .grandfathers-tribute {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+}
+body.lang-fr .tribute-title { font-size: 13px; }
+body.lang-fr .tribute-side { font-size: 12.5px; }
 
 /* CARTES */
 .logo-separator { min-height: 28svh; display: grid; place-items: center; }
@@ -738,35 +776,4 @@ body.reveal-ready .reveal-countdown.is-visible > div:nth-child(4) { transition-d
     filter: none !important;
     transition: none !important;
   }
-}
-/* Agrandir les textes français */
-body.lang-fr .invite-text {
-  font-size: 20px;
-}
-
-body.lang-fr .presence,
-body.lang-fr .time-line,
-body.lang-fr .normal-text {
-  font-size: 19px;
-}
-
-body.lang-fr .date-line {
-  font-size: 23px;
-}
-
-body.lang-fr .hebrew-date {
-  font-size: 20px;
-}
-
-body.lang-fr .venue {
-  font-size: 23px;
-}
-
-body.lang-fr .city {
-  font-size: 17px;
-}
-
-/* Agrandir les noms des familles */
-body.lang-fr .families p::after {
-  font-size: clamp(14px, 3.4vw, 15.8px) !important;
 }
