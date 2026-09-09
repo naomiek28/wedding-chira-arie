@@ -8,7 +8,7 @@ const translations = {
     invite: "מתוך הודיה לה׳ ובשמחה גדולה אנו מתכבדים להזמינכם לשמחת נישואי ילדינו ונכדינו",
     presence: "ונשמח לראותכם עמנו ביום", date: "יום ראשון, ה׳ בכסלו תשפ״ז",
     civilDate: "15 בנובמבר 2026", reception: "קבלת פנים בשעה 18:00", houppa: "חופה בשעה 19:00",
-    city: "מושדיעין, ישראל", venueLabel: "מקום האירוע", venueName: "הרמוזו גן אירועים", waze: "פתיחה ב-Waze", calendar: "הוספה ליומן Google",
+    city: "מודיעין, ישראל", venueLabel: "מקום האירוע", venueName: "הרמוזו גן אירועים", waze: "פתיחה ב-Waze", calendar: "הוספה ליומן Google",
     replyLabel: "אישור הגעה", replyText: "נשמח לקבל את אישור הגעתכם.", sidePlaceholder: "הוזמנתם מצד:",
     sideChira: "שירה", sideArie: "אריה לייב", name: "שם מלא", yes: "כן, נגיע בשמחה", no: "לצערנו לא נוכל להגיע",
     message: "ברכה לזוג", send: "שליחה", guestCountPlaceholder: "כמה אנשים יהיו?", peopleOne: "אורח אחד", peopleMany: "אורחים", sending: "שולח...",
