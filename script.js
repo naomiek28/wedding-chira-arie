@@ -21,7 +21,7 @@ const translations = {
     invite: "C’est avec une immense reconnaissance envers Hachem que nous avons la joie de vous faire part du mariage de nos enfants et petits-enfants",
     presence: "Et serions honorés de votre présence le", date: "15 novembre 2026", civilDate: "5 Kislev 5787",
     reception: "Kabalat Panim à 18h00", houppa: "Houppa à 19h00", city: "Modi’in, Israël", venueLabel: "Lieu de réception", venueName: "Hermozo",
-    tributeTitle: "Une pensée pour nos chers grands-pères absents en ce jour", tributeMoche: "Papi Moché Benhamou z״l", tributeMaurice: "Papi Maurice Gutenstenne z״l", tributeAdi: "Papi Adi Feit z״l",
+    tributeTitle: "Une pensée pour nos chers grands-pères absents en ce jour", tributeMoche: "Papi Moché Benhamou  ז״ל", tributeMaurice: "Papi Maurice Gutenstenne  ז״ל", tributeAdi: "Papi Adi Feit  ז״ל",
     waze: "Ouvrir Waze", calendar: "Ajouter à Google Calendar", replyLabel: "Réponse souhaitée", replyText: "Merci de nous confirmer votre présence.",
     sidePlaceholder: "Vous êtes invité(e) par :", sideChira: "Chira", sideArie: "Arié Leib", name: "Nom complet",
     yes: "Oui, je viens", no: "Non, je ne pourrai pas venir", message: "Un mot pour les mariés", send: "Envoyer",
